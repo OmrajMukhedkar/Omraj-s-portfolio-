@@ -23,12 +23,19 @@
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#skills-education">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#creative-tech">Creative Tech</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#growth-timeline">Timeline</a></li>
+      <li><a href="#project-gallery">Gallery</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <a href="resume.pdf" class="nav-resume-btn" download>
+      <span aria-hidden="true">&darr;</span>
+      Resume
+    </a>
     <!-- Hamburger icon for mobile view -->
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </nav>
@@ -37,9 +44,16 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="#home" class="mobile-link">Home</a>
     <a href="#about" class="mobile-link">About</a>
+    <a href="#skills-education" class="mobile-link">Skills</a>
     <a href="#projects" class="mobile-link">Projects</a>
-    <a href="#creative-tech" class="mobile-link">Creative Tech</a>
+    <a href="#certifications" class="mobile-link">Certifications</a>
+    <a href="#growth-timeline" class="mobile-link">Timeline</a>
+    <a href="#project-gallery" class="mobile-link">Gallery</a>
     <a href="#contact" class="mobile-link">Contact</a>
+    <a href="resume.pdf" class="mobile-resume-btn" download>
+      <span aria-hidden="true">&darr;</span>
+      Resume
+    </a>
   </div>
 
 
@@ -58,8 +72,14 @@
         <p class="hero-subtitle">
           MIT Academy of Engineering &bull; Exploring Automation, Web Tools &amp; Engineering Systems
         </p>
-        <!-- CTA button scrolls to projects section -->
-        <a href="#projects" class="btn-primary">View My Work</a>
+        <!-- CTA buttons -->
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="resume.pdf" class="btn-secondary" download>
+            <span class="download-icon" aria-hidden="true">&darr;</span>
+            Download Resume
+          </a>
+        </div>
       </div>
 
       <!-- New Hero Image Side -->
@@ -95,15 +115,22 @@
 
       <!-- Left: Text content -->
       <div class="about-text fade-in">
-        <p>
-          I am a first-year B.Tech AIML engineering student with a strong
-          interest in technology, artificial intelligence, and software
-          development. I am passionate about building innovative web-based
-          tools and student-focused solutions that solve real-world problems.
-          Currently, I am exploring web development, data-driven systems,
-          and the fundamentals of machine learning.
-        </p>
+        <div class="about-intro-card">
+          <span class="about-card-label">Profile Snapshot</span>
+          <p>
+            I am a first-year B.Tech AIML engineering student with a strong
+            interest in technology, artificial intelligence, and software
+            development. I am passionate about building innovative web-based
+            tools and student-focused solutions that solve real-world problems.
+            Currently, I am exploring web development, data-driven systems,
+            and the fundamentals of machine learning.
+          </p>
+        </div>
 
+      </div>
+
+      <!-- Right: Fields of interest -->
+      <div class="about-interests fade-in">
         <!-- Fields of Interest -->
         <div class="interest-cards">
           <div class="interest-card primary-interest">
@@ -124,28 +151,167 @@
         </div>
       </div>
 
-      <!-- Right: Skills -->
-      <div class="skills-box fade-in">
-        <h3>My Skills</h3>
 
-        <div class="skills-grid">
-          <span class="skill-tag">HTML</span>
-          <span class="skill-tag">CSS</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">Python (Learning)</span>
-          <span class="skill-tag">Problem Solving</span>
-          <span class="skill-tag">Data Analysis</span>
-          <span class="skill-tag">Machine Learning Basics</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== SKILLS & EDUCATION SECTION ===================== -->
+<section class="skills-education section" id="skills-education">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <span class="section-tag">Toolkit &amp; Training</span>
+      <h2>Skills &amp; <span class="accent">Education</span></h2>
+    </div>
+
+    <div class="skills-education-grid">
+
+      <div class="skills-panel fade-in">
+        <div class="skills-box">
+          <span class="about-card-label">Technical Toolkit</span>
+          <h3>My Skills</h3>
+
+          <div class="skills-grid">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python (Learning)</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Data Analysis</span>
+            <span class="skill-tag">Machine Learning Basics</span>
+          </div>
         </div>
+      </div>
 
-        <!-- Education card inside skills box -->
-        <div class="edu-card">
+      <div class="education-panel-wrap fade-in">
+        <div class="edu-card education-panel">
           <p class="edu-label">Currently Studying</p>
           <p class="edu-course">B.Tech. AIML Engineering</p>
           <p class="edu-college">MIT Academy of Engineering, Pune</p>
           <span class="edu-year">2025 – 2029</span>
         </div>
       </div>
+
+    </div>
+  </div>
+</section>
+<!-- ===================== JOURNEY & VISION SECTION ===================== -->
+<section class="journey-vision section" id="journey-vision">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <span class="section-tag">Direction</span>
+      <h2>Journey &amp; <span class="accent">Vision</span></h2>
+    </div>
+
+    <div class="ct-grid">
+
+      <div class="ct-card fade-in">
+        <span class="ct-icon">01</span>
+        <h4>Current Focus</h4>
+        <p>
+          Building a strong foundation in engineering, programming, web
+          development, and artificial intelligence as a first-year AIML student
+          at MIT Academy of Engineering.
+        </p>
+      </div>
+
+      <div class="ct-card fade-in">
+        <span class="ct-icon">02</span>
+        <h4>Career Direction</h4>
+        <p>
+          Working toward becoming a practical AI and software builder who can
+          create useful digital tools for students, learning, automation, and
+          real-world problem solving.
+        </p>
+      </div>
+
+      <div class="ct-card fade-in">
+        <span class="ct-icon">03</span>
+        <h4>Growth Plan</h4>
+        <p>
+          Strengthening Python, frontend development, data thinking, and project
+          documentation through coursework, certifications, experiments, and
+          consistent portfolio building.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== GROWTH TIMELINE SECTION ===================== -->
+<section class="growth-timeline section" id="growth-timeline">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <span class="section-tag">Learning Path</span>
+      <h2>Growth <span class="accent">Timeline</span></h2>
+    </div>
+
+    <div class="timeline-list">
+
+      <article class="timeline-card fade-in">
+        <span class="timeline-step">01</span>
+        <div>
+          <h3>Started Engineering</h3>
+          <p>
+            Began B.Tech. AIML at MIT Academy of Engineering, Pune, with a
+            focus on building strong fundamentals in technology and problem
+            solving.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-card fade-in">
+        <span class="timeline-step">02</span>
+        <div>
+          <h3>Learned HTML &amp; CSS</h3>
+          <p>
+            Practiced the basics of webpage structure, styling, responsive
+            layouts, and clean visual presentation for academic portfolio work.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-card fade-in">
+        <span class="timeline-step">03</span>
+        <div>
+          <h3>Built First Portfolio</h3>
+          <p>
+            Created this digital portfolio to organize personal background,
+            skills, certifications, projects, and learning progress in one
+            professional space.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-card fade-in">
+        <span class="timeline-step">04</span>
+        <div>
+          <h3>Started Python</h3>
+          <p>
+            Completed beginner Python learning through structured coursework,
+            covering variables, control flow, functions, modules, and OOP
+            basics.
+          </p>
+        </div>
+      </article>
+
+      <article class="timeline-card fade-in">
+        <span class="timeline-step">05</span>
+        <div>
+          <h3>Exploring AI &amp; Web Tools</h3>
+          <p>
+            Experimenting with AI tools, prompt writing, automation ideas, and
+            web-based solutions that can support student learning and daily
+            productivity.
+          </p>
+        </div>
+      </article>
 
     </div>
   </div>
@@ -207,6 +373,88 @@
 
     </div>
 
+  </div>
+</section>
+
+
+<!-- ===================== FEATURED WORK SECTION ===================== -->
+<section class="projects section" id="projects">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <span class="section-tag">Applied Learning</span>
+      <h2>Featured <span class="accent">Work</span></h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card fade-in">
+        <div class="card-top">
+          <span class="card-icon">01</span>
+          <span class="card-number">HTML</span>
+        </div>
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          Designed and developed a responsive portfolio to present academic
+          background, technical interests, skills, certifications, and learning
+          progress in one organized digital space.
+        </p>
+        <div class="card-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+        <div class="card-footer">
+          <span class="status-dot"></span>
+          <span>Completed</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="card-top">
+          <span class="card-icon">02</span>
+          <span class="card-number">AIML</span>
+        </div>
+        <h3>AI Learning Experiments</h3>
+        <p>
+          Exploring AI concepts through beginner-friendly experiments, prompt
+          practice, Python fundamentals, and responsible use of intelligent
+          tools for academic productivity.
+        </p>
+        <div class="card-tags">
+          <span>AI Basics</span>
+          <span>Python</span>
+          <span>Prompting</span>
+        </div>
+        <div class="card-footer">
+          <span class="status-dot"></span>
+          <span>In Progress</span>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="card-top">
+          <span class="card-icon">03</span>
+          <span class="card-number">MIT</span>
+        </div>
+        <h3>Academic Assignments</h3>
+        <p>
+          Coursework and practice tasks focused on programming logic,
+          engineering fundamentals, communication, documentation, and structured
+          problem-solving habits.
+        </p>
+        <div class="card-tags">
+          <span>Coursework</span>
+          <span>Documentation</span>
+          <span>Problem Solving</span>
+        </div>
+        <div class="card-footer">
+          <span class="status-dot"></span>
+          <span>Ongoing</span>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -401,6 +649,203 @@
         </div>
 
       </div><!-- /cert-grid -->
+    </div>
+  </section>
+
+
+  <!-- ===================== HIGHLIGHTS & MILESTONES SECTION ===================== -->
+  <section class="highlights section" id="highlights">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <span class="section-tag">Progress Record</span>
+        <h2>Highlights &amp; <span class="accent">Milestones</span></h2>
+      </div>
+
+      <div class="facts-grid">
+        <div class="fact-card fade-in">
+          <h3>First-Year AIML Foundation</h3>
+          <p>
+            Started the B.Tech AIML journey at MITAOE with a clear focus on
+            programming fundamentals, engineering thinking, and consistent
+            technical growth.
+          </p>
+        </div>
+
+        <div class="fact-card fade-in">
+          <h3>Python Learning Track</h3>
+          <p>
+            Completed structured Python learning through Cisco Networking
+            Academy courses, covering core programming, functions, modules,
+            file handling, and OOP basics.
+          </p>
+        </div>
+
+        <div class="fact-card fade-in">
+          <h3>AI Fluency Development</h3>
+          <p>
+            Built early fluency in AI tools, responsible AI use, prompting, and
+            student-focused applications through guided learning programs.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== PEER & MENTOR NOTES SECTION ===================== -->
+  <section class="peer-notes section" id="peer-notes">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <span class="section-tag">Recommendations</span>
+        <h2>Peer &amp; <span class="accent">Mentor Notes</span></h2>
+      </div>
+
+      <div class="notes-grid">
+        <article class="note-card fade-in">
+          <p>
+            "Omraj shows steady curiosity in technical learning and is willing
+            to improve through practice, feedback, and consistent effort."
+          </p>
+          <div class="note-author">
+            <strong>Faculty Mentor</strong>
+            <span>First-Year Engineering Guidance</span>
+          </div>
+        </article>
+
+        <article class="note-card fade-in">
+          <p>
+            "He communicates ideas clearly during group tasks and takes
+            responsibility for organizing work in a simple, structured way."
+          </p>
+          <div class="note-author">
+            <strong>Classmate</strong>
+            <span>AIML Batch Peer</span>
+          </div>
+        </article>
+
+        <article class="note-card fade-in">
+          <p>
+            "His portfolio reflects an early but focused interest in AI, web
+            tools, and practical project-based learning."
+          </p>
+          <div class="note-author">
+            <strong>Project Reviewer</strong>
+            <span>Portfolio Feedback</span>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== PROJECT GALLERY SECTION ===================== -->
+  <section class="project-gallery section" id="project-gallery">
+    <div class="container">
+
+      <div class="section-header fade-in">
+        <span class="section-tag">Media Evidence</span>
+        <h2>Project <span class="accent">Gallery</span></h2>
+      </div>
+
+      <div class="project-gallery-grid">
+
+        <article class="gallery-project-card fade-in">
+          <div class="gallery-preview robotics-preview">
+            <img src="robot.png" alt="IR Sensor Line Follower Robot" class="gallery-preview-img">
+            <span class="preview-label">Robotics Prototype</span>
+          </div>
+          <div class="gallery-project-content">
+            <div class="gallery-card-header">
+              <h3>IR Sensor Line Follower Robot</h3>
+              <span class="project-status">Prototype Completed</span>
+            </div>
+            <p>
+              An autonomous robot using IR sensors to detect and follow path
+              lines with real-time directional correction using Arduino and
+              motor drivers.
+            </p>
+            <div class="card-tags">
+              <span>Arduino</span>
+              <span>IR Sensors</span>
+              <span>Embedded Systems</span>
+              <span>Automation</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-project-card fade-in">
+          <div class="gallery-preview obstacle-preview">
+            <span class="preview-label">Sensor Navigation</span>
+          </div>
+          <div class="gallery-project-content">
+            <div class="gallery-card-header">
+              <h3>Obstacle Avoiding Robot</h3>
+              <span class="project-status">Working Prototype</span>
+            </div>
+            <p>
+              Built an intelligent obstacle-avoidance robot using ultrasonic
+              sensors and Arduino for autonomous movement and collision
+              detection.
+            </p>
+            <div class="card-tags">
+              <span>Arduino</span>
+              <span>Ultrasonic Sensor</span>
+              <span>Robotics</span>
+              <span>C++</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-project-card fade-in">
+          <div class="gallery-preview webtools-preview">
+            <span class="preview-label">Web Utility</span>
+          </div>
+          <div class="gallery-project-content">
+            <div class="gallery-card-header">
+              <h3>Student Productivity Toolkit</h3>
+              <span class="project-status">In Development</span>
+            </div>
+            <p>
+              A browser-based student utility platform containing productivity
+              tools, academic helpers, and smart student-focused utilities.
+            </p>
+            <div class="card-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Web Tools</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="gallery-project-card fade-in">
+          <div class="gallery-preview dashboard-preview">
+            <span class="preview-label">AI Progress UI</span>
+          </div>
+          <div class="gallery-project-content">
+            <div class="gallery-card-header">
+              <h3>AI Learning Dashboard</h3>
+              <span class="project-status">Concept Design</span>
+            </div>
+            <p>
+              A concept interface for tracking AI learning progress,
+              certifications, coding milestones, and technical growth.
+            </p>
+            <div class="card-tags">
+              <span>UI Design</span>
+              <span>AI</span>
+              <span>Dashboard</span>
+              <span>Frontend</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
     </div>
   </section>
 

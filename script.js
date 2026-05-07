@@ -38,6 +38,7 @@ const mobileMenu  = document.getElementById('mobileMenu');
 // Toggle means: if open → close; if closed → open
 hamburger.addEventListener('click', function () {
   mobileMenu.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', mobileMenu.classList.contains('open'));
 });
 
 // Close the menu when any mobile link is clicked
@@ -47,6 +48,7 @@ const mobileLinks = document.querySelectorAll('.mobile-link');
 mobileLinks.forEach(function (link) {
   link.addEventListener('click', function () {
     mobileMenu.classList.remove('open'); // Close menu after navigation
+    hamburger.setAttribute('aria-expanded', 'false');
   });
 });
 
